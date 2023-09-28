@@ -10,7 +10,6 @@ There won't be efficiency and automatic testing (lack of resources).
 
 3. Test object:
 The test object will be the MrBuggy7 app downloadable from:
-
 http://mrbuggy.pl/mrbuggy7/
 
 4. Pass/fail criteria:
@@ -24,10 +23,10 @@ All test cases finished succesfully and confidense in enough experience gained f
 
 7. Test environment:
 Desktop with Intel Core i7-8650U-CPU and 8 GB RAM
-
 64-bit Windows 10 Pro.
 
 8. Test Schedule:
+
 - reviewing specifications
 
 - preparing test cases
@@ -39,6 +38,7 @@ Desktop with Intel Core i7-8650U-CPU and 8 GB RAM
 - preparing test report
 
 9. Test report:
+
 - list of test cases statuses
 
 - summary
@@ -48,7 +48,6 @@ Desktop with Intel Core i7-8650U-CPU and 8 GB RAM
 - recommendations
 
 10. Test tools:
-- TestLink 1.9.20
 
 - Postman
 
@@ -56,18 +55,16 @@ Desktop with Intel Core i7-8650U-CPU and 8 GB RAM
 
 - ShareX
 
-- Jira
+- Qase
 
 11. Defect management:
-Reporting into Jira.
+Reporting into Quase. Report should contain detailed description, priority, expected and actual results, reproduction steps.
 
 12. Roles and responsibilities:
 Jakub Rzempała - preparing test plan, test cases, executing tests and preparing test report.
 
- 
 
 PL
- 
  
 
 1. Wstęp:
@@ -75,7 +72,6 @@ Celem testów jest nabycie doświadczenia w testowaniu oprogramowania oraz odnal
 
 2. Zakres testów:
 Wykonane zostaną manualne testy fukcjonalne systemowe.
-
 Nie zostaną wykonane testy wydajnościowe oraz testy automatyczne (brak zasobów).
 
 3. Przedmiot testów:
@@ -94,10 +90,10 @@ Wszystkie przypadki testowe wykonane pomyślnie.
 
 7. Środowisko testowe:
 Laptop Intel Core i7-8650U-CPU oraz 8 GB RAM
-
 64-bit Windows 10 Pro.
 
 8. Harmonogram testów:
+
 - przegląd specyfikacji
 
 - przygotowanie przypadków testowych
@@ -109,6 +105,7 @@ Laptop Intel Core i7-8650U-CPU oraz 8 GB RAM
 - sporządzenie raportu
 
 9. Raport testowy:
+
 - lista statusów przypadków testowych
 
 - podsumowanie procesu testowania
@@ -118,7 +115,6 @@ Laptop Intel Core i7-8650U-CPU oraz 8 GB RAM
 - rekomendacje
 
 10. Narzędzia testowe:
-- TestLink 1.9.20
 
 - Postman
 
@@ -126,10 +122,10 @@ Laptop Intel Core i7-8650U-CPU oraz 8 GB RAM
 
 - ShareX
 
-- Jira
+- Qase
 
 11. Zarządzanie błędami:
-Zgłaszanie ich w projekcie na platformie Jira.
+Zgłaszanie ich w projekcie na platformie Qase. Raport powinien zawierać dokładny opis, priorytet, oczekiwany i faktyczny rezultat, listę kroków do reprodukcji.
 
 12. Role i odpowiedzialności:
 Jakub Rzempała - przygotowanie planu i przypadków testowych, wykonanie testów, sporządzenie raportu.
