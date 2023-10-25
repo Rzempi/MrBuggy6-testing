@@ -4,7 +4,7 @@ ENG
 The goal of testing is to gain an experience in software testing and finding defects intentionally implemented by developers.
 
 2. Tests range:
-System manual functional testing will be made.
+System manual functional and API testing will be made.
 
 There won't be efficiency and automatic testing (lack of resources).
 
@@ -71,7 +71,7 @@ PL
 Celem testów jest nabycie doświadczenia w testowaniu oprogramowania oraz odnalezienie błędów intencjonalnie zaimplementowanych przez deweloperów.
 
 2. Zakres testów:
-Wykonane zostaną manualne testy fukcjonalne systemowe.
+Wykonane zostaną manualne testy fukcjonalne systemowe oraz testy API.
 Nie zostaną wykonane testy wydajnościowe oraz testy automatyczne (brak zasobów).
 
 3. Przedmiot testów:
@@ -83,7 +83,7 @@ http://mrbuggy.pl/mrbuggy7/
 Brak.
 
 5. Kryteria wejściowe:
-Środowisko testowe jest pobrane i pobrawnie działa.
+Środowisko testowe jest pobrane i poprawnie działa.
 
 6. Kryteria wyjściowe:
 Wszystkie przypadki testowe wykonane pomyślnie.

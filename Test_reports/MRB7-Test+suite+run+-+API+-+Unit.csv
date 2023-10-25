@@ -1,0 +1,132 @@
+case_id,title,suite,suite_id,assignee,time_spent_ms,status,finish_time,steps,steps_input_data,steps_expected_result,steps_status,comment,stacktrace,priority,severity,automation,type,tags,step_comments,case_parameter
+18,"Getting units list","API - Unit",6,"Jakub Rzempała",424000,Failed,"2023-10-25 13:03:44","1. Send GET request
+authorized by admin
+2. Send GET request
+authorized by employee
+3. Send GET request
+authorized by provider (user)
+","1. Headers described in specification
+[http://localhost:8080/unit](http://localhost:8080/unit)
+2. Headers described in specification
+[http://localhost:8080/unit](http://localhost:8080/unit)
+3. Headers described in specification
+[http://localhost:8080/unit](http://localhost:8080/unit)
+","1. Status 200
+2. Status 401 - unauthorized
+3. Status 401 - unauthorized
+","1. Passed
+2. Failed
+3. Passed
+","Step 2",,Medium,Major,"Not automated",Other,,"1. 
+2. 
+3. ",
+19,"Getting single unit info","API - Unit",6,"Jakub Rzempała",172000,Failed,"2023-10-25 13:06:47","1. Send GET request with not existing unit ID
+authorized by admin
+2. Send GET request with existing unit ID
+authorized by admin
+[Repeat few times with different IDs]
+3. Send GET request with existing unit ID
+authorized by employee
+4. Send GET request with existing unit ID
+authorized by provider (user)
+","1. Headers described in specification
+e.g.
+[http://localhost:8080/unit/10](http://localhost:8080/unit/10)
+2. Headers described in specification
+e.g.
+[http://localhost:8080/unit/1](http://localhost:8080/unit/10)
+3. Headers described in specification
+e.g.
+[http://localhost:8080/unit/1](http://localhost:8080/unit/10)
+4. Headers described in specification
+e.g.
+[http://localhost:8080/unit/1](http://localhost:8080/unit/10)
+","1. Status 404 - Not found
+2. Status 200
+3. Status 401 - unauthorized
+4. Status 401 - unauthorized
+","1. Passed
+2. Passed
+3. Failed
+4. Passed
+",,,Medium,Major,"Not automated",Other,,"1. 
+2. 
+3. 
+4. ",
+20,"Creating new unit","API - Unit",6,"Jakub Rzempała",162000,Failed,"2023-10-25 13:10:19","1. Send POST request with correct parameter
+authorized by admin
+2. Send POST request with correct parameter
+authorized by employee
+3. Send POST request with correct parameter
+authorized by provider
+","1. Headers and parameter described in specification
+[http://localhost:8080/unit](http://localhost:8080/unit)
+2. Headers and parameter described in specification
+[http://localhost:8080/unit](http://localhost:8080/unit)
+3. Headers and parameter described in specification
+[http://localhost:8080/unit](http://localhost:8080/unit)
+","1. Status 200 with correct data and ID
+2. Status 401 - unauthorized
+3. Status 401 - unauthorized
+","1. Passed
+2. Failed
+3. Passed
+",,,High,Major,"Not automated",Other,,"1. 
+2. 
+3. ",
+21,"Editing chosen unit","API - Unit",6,"Jakub Rzempała",368000,Failed,"2023-10-25 13:16:14","1. Send PUT request with ID of any unit
+authorized by admin
+2. Send PUT request with ID of any unit
+authorized by employee
+3. Send PUT request with ID of any unit
+authorized by provider (user)
+","1. Headers and parameter described in specification
+e.g.
+[http://localhost:8080/unit/1](http://localhost:8080/unit/1)
+2. Headers and parameter described in specification
+e.g.
+[http://localhost:8080/unit/1](http://localhost:8080/unit/1)
+3. Headers and parameter described in specification
+e.g.
+[http://localhost:8080/unit/1](http://localhost:8080/unit/1)
+","1. Status 200
+2. Status 401 - unauthorized
+3. Status 401 - unauthorized
+","1. Passed
+2. Failed
+3. Passed
+",,,Medium,Major,"Not automated",Other,,"1. 
+2. 
+3. ",
+27,"Deleting unit","API - Unit",6,"Jakub Rzempała",675000,Failed,"2023-10-25 13:28:14","1. Send DELETE request with ID of unit with no CR connected to it
+authorized by employee
+2. Send DELETE request with ID of unit with no CR connected to it
+authorized by provider (user)
+3. Send DELETE request with ID of unit with no CR connected to it
+authorized by admin
+4. Send DELETE request with ID of unit with CR connected to it
+authorized by admin
+","1. Headers described in specification
+e.g.
+[http://localhost:8080/unit/1](http://localhost:8080/unit/1)
+2. Headers described in specification
+e.g.
+[http://localhost:8080/unit/1](http://localhost:8080/unit/1)
+3. Headers described in specification
+e.g.
+[http://localhost:8080/unit/1](http://localhost:8080/unit/1)
+4. Headers described in specification
+e.g.
+[http://localhost:8080/unit/1](http://localhost:8080/unit/1)
+","1. Status 401 - unauthorized
+2. Status 401 - unauthorized
+3. Status 200
+4. Status ? - request failed
+","1. Failed
+2. Passed
+3. Passed
+4. Passed
+","Step 1 and step 4",,High,Critical,"Not automated",Other,,"1. 
+2. 
+3. 
+4. Status 404, Unit with no employees connected can be deleted. Unit with employee connected, but no CR created by this employee can still be deleted - mistake in specification.",

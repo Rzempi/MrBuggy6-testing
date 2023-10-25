@@ -1,0 +1,543 @@
+case_id,title,suite,suite_id,assignee,time_spent_ms,status,finish_time,steps,steps_input_data,steps_expected_result,steps_status,comment,stacktrace,priority,severity,automation,type,tags,step_comments,case_parameter
+13,"Getting users list","API - User",5,"Jakub Rzempała",179000,Failed,"2023-10-25 09:56:54","1. Send GET request
+authorized by admin
+2. Send GET request
+authorized by employee
+3. Send GET request
+authorized by provider
+","1. Headers described in specification
+[http://localhost:8080/user](http://localhost:8080/user)
+2. Headers described in specification
+[http://localhost:8080/user](http://localhost:8080/user)
+3. Headers described in specification
+[http://localhost:8080/user](http://localhost:8080/user)
+","1. Status 200
+2. Status 401 - unauthorized
+3. Status 401 - unauthorized
+","1. Passed
+2. Failed
+3. Untested
+","Status 404 instead of 401",,Medium,Major,"Not automated",Other,,"1. 
+2. 
+3. ",
+13,"Getting users list","API - User",5,"Jakub Rzempała",0,Retest,"2023-10-25 09:57:42","1. Send GET request
+authorized by admin
+2. Send GET request
+authorized by employee
+3. Send GET request
+authorized by provider
+","1. Headers described in specification
+[http://localhost:8080/user](http://localhost:8080/user)
+2. Headers described in specification
+[http://localhost:8080/user](http://localhost:8080/user)
+3. Headers described in specification
+[http://localhost:8080/user](http://localhost:8080/user)
+","1. Status 200
+2. Status 401 - unauthorized
+3. Status 401 - unauthorized
+",,,,Medium,Major,"Not automated",Other,,,
+13,"Getting users list","API - User",5,"Jakub Rzempała",70000,Failed,"2023-10-25 09:59:06","1. Send GET request
+authorized by admin
+2. Send GET request
+authorized by employee
+3. Send GET request
+authorized by provider
+","1. Headers described in specification
+[http://localhost:8080/user](http://localhost:8080/user)
+2. Headers described in specification
+[http://localhost:8080/user](http://localhost:8080/user)
+3. Headers described in specification
+[http://localhost:8080/user](http://localhost:8080/user)
+","1. Status 200
+2. Status 401 - unauthorized
+3. Status 401 - unauthorized
+","1. Passed
+2. Failed
+3. Passed
+",,,Medium,Major,"Not automated",Other,,"1. 
+2. 
+3. ",
+14,"Getting single user info","API - User",5,"Jakub Rzempała",89000,Failed,"2023-10-25 10:01:05","1. Send GET request
+authorized by admin
+[Repeat few times with different IDs]
+2. Send GET request
+authorized by employee
+3. Send GET request
+authorized by provider
+4. Send GET request with non existing ID
+authorized by admin
+","1. Headers described in specification
+e.g.
+[http://localhost:8080/user/1](http://localhost:8080/user/1)
+2. Headers described in specification
+e.g.
+[http://localhost:8080/user/1](http://localhost:8080/user/1)
+3. Headers described in specification
+e.g.
+[http://localhost:8080/user/1](http://localhost:8080/user/1)
+4. Headers described in specification
+e.g.
+[http://localhost:8080/user/10](http://localhost:8080/user/10)
+","1. Status 200
+2. Status 401 - unauthorized
+3. Status 401 - unauthorized
+4. Status 404 - Not Found
+","1. Passed
+2. Failed
+3. Untested
+4. Untested
+","Status 404 instead of 401",,Medium,Major,"Not automated",Other,,"1. 
+2. 
+3. 
+4. ",
+14,"Getting single user info","API - User",5,"Jakub Rzempała",0,Retest,"2023-10-25 10:01:48","1. Send GET request
+authorized by admin
+[Repeat few times with different IDs]
+2. Send GET request
+authorized by employee
+3. Send GET request
+authorized by provider
+4. Send GET request with non existing ID
+authorized by admin
+","1. Headers described in specification
+e.g.
+[http://localhost:8080/user/1](http://localhost:8080/user/1)
+2. Headers described in specification
+e.g.
+[http://localhost:8080/user/1](http://localhost:8080/user/1)
+3. Headers described in specification
+e.g.
+[http://localhost:8080/user/1](http://localhost:8080/user/1)
+4. Headers described in specification
+e.g.
+[http://localhost:8080/user/10](http://localhost:8080/user/10)
+","1. Status 200
+2. Status 401 - unauthorized
+3. Status 401 - unauthorized
+4. Status 404 - Not Found
+",,,,Medium,Major,"Not automated",Other,,,
+14,"Getting single user info","API - User",5,"Jakub Rzempała",61000,Failed,"2023-10-25 10:02:59","1. Send GET request
+authorized by admin
+[Repeat few times with different IDs]
+2. Send GET request
+authorized by employee
+3. Send GET request
+authorized by provider
+4. Send GET request with non existing ID
+authorized by admin
+","1. Headers described in specification
+e.g.
+[http://localhost:8080/user/1](http://localhost:8080/user/1)
+2. Headers described in specification
+e.g.
+[http://localhost:8080/user/1](http://localhost:8080/user/1)
+3. Headers described in specification
+e.g.
+[http://localhost:8080/user/1](http://localhost:8080/user/1)
+4. Headers described in specification
+e.g.
+[http://localhost:8080/user/10](http://localhost:8080/user/10)
+","1. Status 200
+2. Status 401 - unauthorized
+3. Status 401 - unauthorized
+4. Status 404 - Not Found
+","1. Passed
+2. Failed
+3. Passed
+4. Passed
+",,,Medium,Major,"Not automated",Other,,"1. 
+2. 
+3. 
+4. ",
+9,"Getting currently logged in user","API - User",5,"Jakub Rzempała",91693,Passed,"2023-10-25 10:07:47","1. Send GET request
+authorized by admin
+2. Send GET request
+authorized by employee
+3. Send GET request
+authorized by provider (user)
+","1. Headers described in specification
+[http://localhost:8080/user/profile](http://localhost:8080/user/profile)
+2. Headers described in specification
+[http://localhost:8080/user/profile](http://localhost:8080/user/profile)
+3. Headers described in specification
+[http://localhost:8080/user/profile](http://localhost:8080/user/profile)
+","1. Status 200 and data compliant with authorized user
+2. Status 200 and data compliant with authorized user
+3. Status 401 - unauthorized
+","1. Passed
+2. Passed
+3. Passed
+",,,Low,Trivial,"Not automated",Other,,"1. 
+2. 
+3. ",
+10,"Creating new admin","API - User",5,"Jakub Rzempała",228000,Failed,"2023-10-25 10:12:38","1. Send POST request with correct parameters
+authorized by admin
+2. Send POST request with correct parameters
+authorized by employee
+3. Send POST request with correct parameters
+authorized by provider (user)
+","1. Headers described in specification
+[http://localhost:8080/user/admin](http://localhost:8080/user/admin)
+2. Headers described in specification
+[http://localhost:8080/user/admin](http://localhost:8080/user/admin)
+3. Headers described in specification
+[http://localhost:8080/user/admin](http://localhost:8080/user/admin)
+","1. Status 200 with correct data and ID
+2. Status 401 - unauthorized
+3. Status 401 - unauthorized
+","1. Passed
+2. Failed
+3. Untested
+","Status 404 instead of 401",,High,Major,"Not automated",Other,,"1. 
+2. 
+3. ",
+10,"Creating new admin","API - User",5,"Jakub Rzempała",0,Retest,"2023-10-25 10:13:24","1. Send POST request with correct parameters
+authorized by admin
+2. Send POST request with correct parameters
+authorized by employee
+3. Send POST request with correct parameters
+authorized by provider (user)
+","1. Headers described in specification
+[http://localhost:8080/user/admin](http://localhost:8080/user/admin)
+2. Headers described in specification
+[http://localhost:8080/user/admin](http://localhost:8080/user/admin)
+3. Headers described in specification
+[http://localhost:8080/user/admin](http://localhost:8080/user/admin)
+","1. Status 200 with correct data and ID
+2. Status 401 - unauthorized
+3. Status 401 - unauthorized
+",,,,High,Major,"Not automated",Other,,,
+10,"Creating new admin","API - User",5,"Jakub Rzempała",25000,Failed,"2023-10-25 10:14:15","1. Send POST request with correct parameters
+authorized by admin
+2. Send POST request with correct parameters
+authorized by employee
+3. Send POST request with correct parameters
+authorized by provider (user)
+","1. Headers described in specification
+[http://localhost:8080/user/admin](http://localhost:8080/user/admin)
+2. Headers described in specification
+[http://localhost:8080/user/admin](http://localhost:8080/user/admin)
+3. Headers described in specification
+[http://localhost:8080/user/admin](http://localhost:8080/user/admin)
+","1. Status 200 with correct data and ID
+2. Status 401 - unauthorized
+3. Status 401 - unauthorized
+","1. Passed
+2. Failed
+3. Passed
+","status 404 instead of 401",,High,Major,"Not automated",Other,,"1. 
+2. 
+3. ",
+11,"Creating new employee","API - User",5,"Jakub Rzempała",279000,Failed,"2023-10-25 10:19:44","1. Send POST request without unit\_id parameter
+authorized by admin
+2. Send POST request with correct data
+authorized by admin
+3. Send POST request with correct data
+authorized by employee
+4. Send POST request with correct data
+authorized by provider
+","1. Headers described in specification
+[http://localhost:8080/user/employee](http://localhost:8080/user/employee)
+2. Headers described in specification
+[http://localhost:8080/user/employee](http://localhost:8080/user/employee)
+3. Headers described in specification
+[http://localhost:8080/user/employee](http://localhost:8080/user/employee)
+4. Headers described in specification
+[http://localhost:8080/user/employee](http://localhost:8080/user/employee)
+","1. Status 200 with validation on unit\_id field
+2. Status 200 with correct data
+3. Status 401 - unauthorized
+4. Status 401 - unauthorized
+","1. Passed
+2. Passed
+3. Failed
+4. Passed
+","step 3",,Medium,Major,"Not automated",Other,,"1. 
+2. 
+3. 
+4. ",
+12,"Creating new provider (user)","API - User",5,"Jakub Rzempała",163000,Failed,"2023-10-25 10:22:47","1. Send POST request without provider\_id parameter
+authorized by admin
+2. Send POST request with correct data
+authorized by admin
+3. Send POST request with correct data
+authorized by employee
+4. Send POST request with correct data
+authorized by provider
+","1. Headers described in specification
+[http://localhost:8080/user/admin](http://localhost:8080/user/admin)
+2. Headers described in specification
+[http://localhost:8080/user/admin](http://localhost:8080/user/admin)
+3. Headers described in specification
+[http://localhost:8080/user/admin](http://localhost:8080/user/admin)
+4. Headers described in specification
+[http://localhost:8080/user/admin](http://localhost:8080/user/admin)
+","1. Status 200 with validation on provider\_id field
+2. Status 200 with correct data
+3. Status 401 - unauthorized
+4. Status 401 - unauthorized
+","1. Passed
+2. Passed
+3. Failed
+4. Passed
+","step 3",,Medium,Major,"Not automated",Other,,"1. 
+2. 
+3. 
+4. ",
+15,"Blocking and unblocking user","API - User",5,"Jakub Rzempała",1321237,Passed,"2023-10-25 10:44:55","1. Send PUT request with ID of active user
+authorized by admin
+2. Send PUT request with ID of active user
+authorized by admin
+3. Send PUT request with ID of blocked user
+authorized by admin
+4. Send PUT request with ID of blocked user
+authorized by admin
+5. Send PUT request with ID of blocked user
+authorized by employee
+6. Send PUT request with ID of active user
+authorized by employee
+7. Send PUT request with ID of blocked user
+authorized by provider
+8. Send PUT request with ID of active user
+authorized by provider
+","1. Headers described in specification
+e.g.
+[http://localhost:8080/user/1/active](http://localhost:8080/user/1/active)
+2. Headers described in specification
+e.g.
+[http://localhost:8080/user/1/block](http://localhost:8080/user/1/block)
+3. Headers described in specification
+e.g.
+[http://localhost:8080/user/1/block](http://localhost:8080/user/1/block)
+4. Headers described in specification
+e.g.
+[http://localhost:8080/user/1/active](http://localhost:8080/user/1/active)
+5. Headers described in specification
+e.g.
+[http://localhost:8080/user/1/active](http://localhost:8080/user/1/active)
+6. Headers described in specification
+e.g.
+[http://localhost:8080/user/1/block](http://localhost:8080/user/1/block)
+7. Headers described in specification
+e.g.
+[http://localhost:8080/user/1/active](http://localhost:8080/user/1/active)
+8. Headers described in specification
+e.g.
+[http://localhost:8080/user/1/block](http://localhost:8080/user/1/block)
+","1. Status 404 - Not found
+2. Status 200
+3. Status 404 - Not found
+4. Status 200
+5. Status 401 - unauthorized
+6. Status 401 - unauthorized
+7. Status 401 - unauthorized
+8. Status 401 - unauthorized
+","1. Passed
+2. Passed
+3. Passed
+4. Passed
+5. Failed
+6. Failed
+7. Passed
+8. Passed
+",,,High,Critical,"Not automated",Other,,"1. 
+2. 
+3. 
+4. 
+5. 
+6. 
+7. 
+8. ",
+15,"Blocking and unblocking user","API - User",5,"Jakub Rzempała",0,Retest,"2023-10-25 10:44:59","1. Send PUT request with ID of active user
+authorized by admin
+2. Send PUT request with ID of active user
+authorized by admin
+3. Send PUT request with ID of blocked user
+authorized by admin
+4. Send PUT request with ID of blocked user
+authorized by admin
+5. Send PUT request with ID of blocked user
+authorized by employee
+6. Send PUT request with ID of active user
+authorized by employee
+7. Send PUT request with ID of blocked user
+authorized by provider
+8. Send PUT request with ID of active user
+authorized by provider
+","1. Headers described in specification
+e.g.
+[http://localhost:8080/user/1/active](http://localhost:8080/user/1/active)
+2. Headers described in specification
+e.g.
+[http://localhost:8080/user/1/block](http://localhost:8080/user/1/block)
+3. Headers described in specification
+e.g.
+[http://localhost:8080/user/1/block](http://localhost:8080/user/1/block)
+4. Headers described in specification
+e.g.
+[http://localhost:8080/user/1/active](http://localhost:8080/user/1/active)
+5. Headers described in specification
+e.g.
+[http://localhost:8080/user/1/active](http://localhost:8080/user/1/active)
+6. Headers described in specification
+e.g.
+[http://localhost:8080/user/1/block](http://localhost:8080/user/1/block)
+7. Headers described in specification
+e.g.
+[http://localhost:8080/user/1/active](http://localhost:8080/user/1/active)
+8. Headers described in specification
+e.g.
+[http://localhost:8080/user/1/block](http://localhost:8080/user/1/block)
+","1. Status 404 - Not found
+2. Status 200
+3. Status 404 - Not found
+4. Status 200
+5. Status 401 - unauthorized
+6. Status 401 - unauthorized
+7. Status 401 - unauthorized
+8. Status 401 - unauthorized
+",,,,High,Critical,"Not automated",Other,,,
+15,"Blocking and unblocking user","API - User",5,"Jakub Rzempała",13000,Failed,"2023-10-25 10:46:28","1. Send PUT request with ID of active user
+authorized by admin
+2. Send PUT request with ID of active user
+authorized by admin
+3. Send PUT request with ID of blocked user
+authorized by admin
+4. Send PUT request with ID of blocked user
+authorized by admin
+5. Send PUT request with ID of blocked user
+authorized by employee
+6. Send PUT request with ID of active user
+authorized by employee
+7. Send PUT request with ID of blocked user
+authorized by provider
+8. Send PUT request with ID of active user
+authorized by provider
+","1. Headers described in specification
+e.g.
+[http://localhost:8080/user/1/active](http://localhost:8080/user/1/active)
+2. Headers described in specification
+e.g.
+[http://localhost:8080/user/1/block](http://localhost:8080/user/1/block)
+3. Headers described in specification
+e.g.
+[http://localhost:8080/user/1/block](http://localhost:8080/user/1/block)
+4. Headers described in specification
+e.g.
+[http://localhost:8080/user/1/active](http://localhost:8080/user/1/active)
+5. Headers described in specification
+e.g.
+[http://localhost:8080/user/1/active](http://localhost:8080/user/1/active)
+6. Headers described in specification
+e.g.
+[http://localhost:8080/user/1/block](http://localhost:8080/user/1/block)
+7. Headers described in specification
+e.g.
+[http://localhost:8080/user/1/active](http://localhost:8080/user/1/active)
+8. Headers described in specification
+e.g.
+[http://localhost:8080/user/1/block](http://localhost:8080/user/1/block)
+","1. Status 404 - Not found
+2. Status 200
+3. Status 404 - Not found
+4. Status 200
+5. Status 401 - unauthorized
+6. Status 401 - unauthorized
+7. Status 401 - unauthorized
+8. Status 401 - unauthorized
+","1. Passed
+2. Passed
+3. Passed
+4. Passed
+5. Failed
+6. Failed
+7. Passed
+8. Passed
+","step 5 and 6",,High,Critical,"Not automated",Other,,"1. 
+2. 
+3. 
+4. 
+5. 
+6. 
+7. 
+8. ",
+17,"Editing chosen user","API - User",5,"Jakub Rzempała",258000,Failed,"2023-10-25 10:51:02","1. Send PUT request with ID of any user
+authorized by admin
+2. Send PUT request with ID of any user
+authorized by employee
+3. Send PUT request with ID of any user
+authorized by provider (user)
+","1. Headers and parameteres described in specification
+e.g.
+[http://localhost:8080/user/4](http://localhost:8080/user/4)
+2. Headers and parameteres described in specification
+e.g.
+[http://localhost:8080/user/4](http://localhost:8080/user/4)
+3. Headers and parameteres described in specification
+e.g.
+[http://localhost:8080/user/4](http://localhost:8080/user/4)
+","1. Status 200
+2. Status 401 - unauthorized
+3. Status 401 - unauthorized
+","1. Passed
+2. Failed
+3. Passed
+","step 2",,Medium,Major,"Not automated",Other,,"1. 
+2. 
+3. ",
+16,"Deleting user","API - User",5,"Jakub Rzempała",290000,Failed,"2023-10-25 10:56:08","1. Send DELETE request with ID of admin
+authorized by employee
+2. Send DELETE request with ID of employee/provider
+authorized by employee
+3. Send DELETE request with ID of admin
+authorized by provider (user)
+4. Send DELETE request with ID of employee/provider
+authorized by provider (user)
+5. Send DELETE request with ID of admin
+authorized by admin
+6. Send DELETE request with ID of employee
+authorized by admin
+7. Send DELETE request with ID of provider (user)
+authorized by admin
+","1. Headers described in specification
+e.g.
+[http://localhost:8080/user/1](http://localhost:8080/user/1)
+2. Headers described in specification
+e.g.
+[http://localhost:8080/user/1](http://localhost:8080/user/1)
+3. Headers described in specification
+e.g.
+[http://localhost:8080/user/1](http://localhost:8080/user/1)
+4. Headers described in specification
+e.g.
+[http://localhost:8080/user/1](http://localhost:8080/user/1)
+5. Headers described in specification
+e.g.
+[http://localhost:8080/user/1](http://localhost:8080/user/1)
+6. Headers described in specification
+e.g.
+[http://localhost:8080/user/1](http://localhost:8080/user/1)
+7. Headers described in specification
+e.g.
+[http://localhost:8080/user/1](http://localhost:8080/user/1)
+","1. Status 401 - unauthorized
+2. Status 401 - unauthorized
+3. Status 401 - unauthorized
+4. Status 401 - unauthorized
+5. Status 200
+6. Status 200
+7. Status 200
+","1. Failed
+2. Failed
+3. Passed
+4. Passed
+5. Passed
+6. Passed
+7. Passed
+","steps 1 and 2",,High,Critical,"Not automated",Other,,"1. 
+2. 
+3. 
+4. 
+5. 
+6. 
+7. ",
